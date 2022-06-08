@@ -9,7 +9,7 @@ mkDerivation {
   pname = "ghcjs-base";
   version = "0.2.0.0";
   src = fetchgit {
-    url = "git://github.com/ghcjs/ghcjs-base";
+    url = "https://github.com/ghcjs/ghcjs-base";
     sha256 = "0qr05m0djll3x38dhl85pl798arsndmwfhil8yklhb70lxrbvfrs";
     rev = "01014ade3f8f5ae677df192d7c2a208bd795b96c";
   };
