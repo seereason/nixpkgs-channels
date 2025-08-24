@@ -121,6 +121,7 @@ in buildEnv {
         -e "s,\$SELFAUTOPARENT,$out/share,g" \
         -e "s,\$SELFAUTOGRANDPARENT,$out/share,g" \
         -e "/^mpost,/d" `# CVE-2016-10243` \
+        -e 's/^main_memory = 5000000/main_memory = 20000000/' \
         "$cnfOrig" > ./texmf.cnf
 
       patchCnfLua "./texmfcnf.lua"
